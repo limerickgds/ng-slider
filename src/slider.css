@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/**
+ * ng 轮播模块css
+ *
+ * 
+ */
+
+.sliders{
+	display: block;
+	position: relative;
+	height: 0;
+	overflow: visible;
+}
+.slider-pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.pic-list{
+	width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.pic-list a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.pic-list a>img{
+    display: block;
+	width: 100%;
+	height: 100%;
+}
+.slider-extra{
+	position: absolute;
+    bottom: 3%;
+    pointer-events: none;
+    -webkit-box-pack: end;
+    display: -webkit-box;
+    width: 100%;
+}
+.slider-trigger{
+	display: -webkit-box;
+    -webkit-box-pack: center;
+    margin-right: 10px;
+}
+.slider-trigger-li{
+	margin-right: 8px;
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,.4);
+    -webkit-transition: all .1s linear 0s;
+}
+.slider-trigger-li.active{
+    background-color: #ff0000;
+}
+.slider-page a{
+	background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+    height: 40px;
+    line-height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 24px;
+}
+.slider-page .page-pre{
+	left: 0;
+}
+.slider-page .page-next{
+	right: 0;
+}
